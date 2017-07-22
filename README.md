@@ -4,7 +4,7 @@ This simple SMB vulnerability MS17-010 scanner is developed to help security pro
 to MS17-010 vulnerability.
 
 ## Downloads
-ms17_010_scanner executable can be downloaded here: 
+ms17_010_scanner Windows executable file can be downloaded here https://github.com/ch4meleon/ms17_010_scanner/releases/download/v1.0/ms17_010_scanner.zip
 
 ## Usage
 * Scan a target computer
