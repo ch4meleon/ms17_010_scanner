@@ -22,7 +22,7 @@ ms17_010_scanner.exe -l hosts.txt
 ```
 
 ## Screenshots
-<img align="center" src="./images/1.PNG" alt="Screenshot #1" />
+<img align="center" src="./1.PNG" alt="Screenshot #1" />
 
 ## Contact
 ch4meleon@protonmail.com
