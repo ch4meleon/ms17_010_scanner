@@ -11,9 +11,6 @@
 # - Windows XP SP3	(32-bit)
 # - Windows 7 SP1 	(64-bit)
 #
-# Known problems:
-# - Windows XP SP3 - after a few times running on the platform it returns "Bad userid".
-#
 
 import os
 import sys
@@ -237,20 +234,20 @@ def peeknamedpipe_request(treeid, processid, userid, multiplex_id):
 		multiplex_id
 	]
 
-	smb_header = [
-	  '\xFF\x53\x4D\x42',  # 'server_component': .SMB
-	  '\x25',              # 'smb_command': Trans2
-	  '\x00\x00\x00\x00',  # 'nt_status'
-	  '\x18',              # 'flags'
-	  '\x01\x28',          # 'flags2'
-	  '\x00\x00',          # 'process_id_high'
-	  '\x00\x00\x00\x00\x00\x00\x00\x00',  # 'signature'
-	  '\x00\x00',          # 'reserved'
-	  '\x00\x08',          # 'tree_id'
-	  '\x00\x08',          # 'process_id'
-	  '\x00\x08',          # 'user_id'
-	  '\xC5\x5E'           # 'multiplex_id'
-	]
+#	smb_header = [
+#	  '\xFF\x53\x4D\x42',  # 'server_component': .SMB
+#	  '\x25',              # 'smb_command': Trans2
+#	  '\x00\x00\x00\x00',  # 'nt_status'
+#	  '\x18',              # 'flags'
+#	  '\x01\x28',          # 'flags2'
+#	  '\x00\x00',          # 'process_id_high'
+#	  '\x00\x00\x00\x00\x00\x00\x00\x00',  # 'signature'
+#	  '\x00\x00',          # 'reserved'
+#	  '\x00\x08',          # 'tree_id'
+#	  '\x00\x08',          # 'process_id'
+#	  '\x00\x08',          # 'user_id'
+#	  '\xC5\x5E'           # 'multiplex_id'
+#	]
 	
 	tran_request = [
 		'\x10',              # Word Count
