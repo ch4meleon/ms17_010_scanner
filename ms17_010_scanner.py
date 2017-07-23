@@ -12,7 +12,7 @@
 # - Windows 7 SP1 	(64-bit)
 #
 # Known problems:
-# - Windows 7 SP1, after a few times the result returned "Bad userid".
+# - Windows XP SP3 - after a few times running on the platform it returns "Bad userid".
 #
 
 import os
