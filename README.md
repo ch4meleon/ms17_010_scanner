@@ -3,7 +3,7 @@
 This simple SMB vulnerability MS17-010 scanner is developed to help security professionals to quickly check if a computer is vulnerable
 to MS17-010 vulnerability.
 
-The scanner
+What this scanner will do:
 * Connect to the target computer using port 445.
 * Send "SMB_COM_NEGOTIATE" and "SMB_COM_SESSION_SETUP_ANDX" packets to establish an SMB session.
 * Connect to the IPC$ share on the target computer by sending "SMB_COM_TREE_CONNECT_ANDX" packet with TreeID set
