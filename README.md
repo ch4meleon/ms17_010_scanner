@@ -1,15 +1,15 @@
 # ms17_010_scanner
 
-This simple SMB vulnerability MS17-010 scanner is developed to help security professionals to quickly check if a computer is vulnerable
-to MS17-010 vulnerability.
+This simple SMB vulnerability __MS17-010__ scanner is developed to help security professionals to quickly check if a computer is vulnerable
+to __MS17-010__ vulnerability.
 
 What this scanner will do:
 * Connect to the target computer using port 445.
-* Send "SMB_COM_NEGOTIATE" and "SMB_COM_SESSION_SETUP_ANDX" packets to establish an SMB session.
-* Connect to the IPC$ share on the target computer by sending "SMB_COM_TREE_CONNECT_ANDX" packet with TreeID set
-to \\<ip_address>\IPC$ and UserID set to the value returned by the server in the previous response.
-* Check for MS17-010 vulnerability by sending an "SMB_COM_TRANSACTION" packet, containing PeekNamedPipe subcommand set to FileID = 0.
-* Check for the error response code 0xC0000205 (STATUS_INSUFF_SERVER_RESOURCES). If the code is found that means the target computer's Windows operating system is vulnerable to MS17-010.
+* Send __"SMB_COM_NEGOTIATE"__ and __"SMB_COM_SESSION_SETUP_ANDX"__ packets to establish an SMB session.
+* Connect to the IPC$ share on the target computer by sending __"SMB_COM_TREE_CONNECT_ANDX"__ packet with TreeID set
+to __\\<TARGET COMPUTER's IP>\IPC$__ and UserID set to the value returned by the server in the previous response.
+* Check for __MS17-010__ vulnerability by sending an __"SMB_COM_TRANSACTION"__ packet, containing PeekNamedPipe subcommand set to FileID = 0.
+* Check for the error response code __0xC0000205 (STATUS_INSUFF_SERVER_RESOURCES)__. If the code is found that means the target computer's Windows operating system is vulnerable to __MS17-010__.
 
 ## Downloads
 ms17_010_scanner Windows executable file can be downloaded here
