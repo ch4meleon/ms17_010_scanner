@@ -1,7 +1,7 @@
 # ms17_010_scanner
 
 This simple SMB vulnerability __MS17-010__ scanner is developed to help security professionals to quickly check if a computer is vulnerable
-to __MS17-010__ vulnerability.
+to __MS17-010__ vulnerability which is used by WannaCry and Petya malwares.
 
 What this scanner will do:
 * Connect to the target computer using port 445.
