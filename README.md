@@ -13,7 +13,7 @@ to __\\<TARGET COMPUTER's IP>\IPC$__ and UserID set to the value returned by the
 
 ## Downloads
 ms17_010_scanner Windows executable file can be downloaded here
-https://github.com/ch4meleon/ms17_010_scanner/releases/download/v1.0/ms17_010_scanner.exe
+https://github.com/ch4meleon/ms17_010_scanner/releases/
 
 ## Usage
 * Scan a target computer
