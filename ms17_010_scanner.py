@@ -10,6 +10,7 @@
 # Tested working on:
 # - Windows XP SP3	(32-bit)
 # - Windows 7 SP1 	(64-bit)
+# - Windows 10		(64-bit)
 #
 
 import os
@@ -400,7 +401,7 @@ def scan_host(ip, port=445):
 			log.info("[-] %s, ERROR (TID INVALID)" % (ip))
 			
 		elif (response_code == "220000c0"):
-			log.info("[-] %s, ERROR (STATUS_ACCESS_DENIED)" % (ip))
+			log.info("[-] %s, NOT VULNERABLE (STATUS_ACCESS_DENIED)" % (ip))
 			
 		else:
 			log.info("[-] %s, UNABLE TO DETERMINE (%s)" % (ip, response_code))
