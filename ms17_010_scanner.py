@@ -386,6 +386,7 @@ def scan_host(ip, port=445):
 		# 02000500 - TID INVALID - ERROR
 		# 02005b00 - Bad userid - NOT VULNERABLE
 		# 080000c0 - STATUS_INVALID_HANDLE
+		# 220000c0 - STATUS_ACCESS_DENIED
 
 		# print response_code
 
@@ -397,6 +398,9 @@ def scan_host(ip, port=445):
 
 		elif (response_code == "02000500"):
 			log.info("[-] %s, ERROR (TID INVALID)" % (ip))
+			
+		elif (response_code == "220000c0"):
+			log.info("[-] %s, ERROR (STATUS_ACCESS_DENIED)" % (ip))
 			
 		else:
 			log.info("[-] %s, UNABLE TO DETERMINE (%s)" % (ip, response_code))
